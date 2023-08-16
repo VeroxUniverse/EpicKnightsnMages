@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "${mod_id}",
+	"version": "${mod_version}",
+	"name": "${mod_name}",
+	"description": "This mod adds new 3D-modelled armors and weapons based on the medieval century.",
+	"authors": [
+		"VPixelStudio, VeroxUniverse"
+	],
+	"contact": {
+		"sources": "Coming Soon"
+	},
+	"license": "GNU Lesser General Public License v3.0",
+	"icon": "assets/knightsnmages/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.vpixelstudio.knightsnmages.KnightsnmagesMod"
+		]
+	},
+	"mixins": [
+		"knightsnmages.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
