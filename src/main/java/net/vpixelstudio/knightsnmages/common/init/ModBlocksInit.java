@@ -11,13 +11,15 @@ import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.vpixelstudio.knightsnmages.KnightsnmagesMod;
+import net.vpixelstudio.knightsnmages.common.blocks.AltarBlock;
+import net.vpixelstudio.knightsnmages.common.blocks.PedestalBlock;
 
 public class ModBlocksInit {
 
     public static final Block ALTAR_BLOCK = registerBlock("altar_block",
-            new Block(FabricBlockSettings.copyOf(Blocks.STONE).sounds(BlockSoundGroup.STONE)));
+            new AltarBlock(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS).sounds(BlockSoundGroup.STONE).nonOpaque()));
     public static final Block PEDESTAL_BLOCK = registerBlock("pedestal_block",
-            new Block(FabricBlockSettings.copyOf(Blocks.STONE).sounds(BlockSoundGroup.STONE)));
+            new PedestalBlock(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS).sounds(BlockSoundGroup.STONE).nonOpaque()));
 
 
     private static Block registerBlock(String name, Block block) {

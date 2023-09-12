@@ -16,6 +16,9 @@
 	"entrypoints": {
 		"main": [
 			"net.vpixelstudio.knightsnmages.KnightsnmagesMod"
+		],
+		"client": [
+			"net.vpixelstudio.knightsnmages.client.KnightsnmagesClientMod"
 		]
 	},
 	"mixins": [
